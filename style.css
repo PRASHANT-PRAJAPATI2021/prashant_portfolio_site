@@ -39,6 +39,7 @@ section{
 }
 .about .about-content,
 .services .serv-content,
+.project .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -207,12 +208,12 @@ section .title::after{
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid rgb(1, 39, 193);
+    /* border: 2px solid rgb(1, 39, 193); */
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
     color: white;
-    background: none;
+    background: rgb(255, 0, 0);
 }
 
 /* about section styling */
@@ -301,6 +302,53 @@ section .title::after{
     color: #fff;
 }
 .services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+/* project section styling */
+.project, .teams{
+    color:#fff;
+    /* background: #cbba02; */
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 204, 0));
+}
+.project .title::before,
+.teams .title::before{
+    background: none;
+}
+.project .title::after,
+.teams .title::after{
+    background: none;
+    content: "what i have done";
+}
+.project .serv-content .card{
+    width: calc(33% - 20px);
+    background: #000000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+}
+.project .serv-content .card:hover{
+    background: rgb(193, 1, 1);
+}
+.project .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.project .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.project .serv-content .card i{
+    font-size: 50px;
+    color: rgb(255, 31, 31);
+    transition: color 0.3s ease;
+}
+.project .serv-content .card:hover i{
+    color: #fff;
+}
+.project .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -443,9 +491,12 @@ section .title::after{
 .owl-dot:hover{
     background: rgb(1, 39, 193)!important;
 }
-
+/* .contact{
+    background-color: #5493f9;
+} */
 .contact .title::after{
     content: "Get in touch";
+    /* background-color: #f9eb54; */
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
