@@ -70,7 +70,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: rgb(1, 39, 193);
+    color: rgb(60, 57, 246);
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -86,8 +86,11 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    padding: 15px 0;
-    background: rgb(1, 39, 193);
+        padding: 15px 0;
+     background: rgb(45, 125, 255); 
+    /* border-bottom: 2px solid #1081f2; */
+    /* background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px); */ 
 }
 .navbar .max-width{
     display: flex;
@@ -100,11 +103,11 @@ section .title::after{
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: rgb(1, 39, 193);
+    color: rgb(54, 140, 252);
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
-    color: #fff;
+    color: #0e0e0e;
 }
 .navbar .menu li{
     list-style: none;
@@ -119,7 +122,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: rgb(1, 39, 193);
+    color: rgb(243, 28, 28);
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -164,7 +167,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("banner.jpg") no-repeat center;
+    background: url("alpine.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -192,7 +195,7 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: yellow;
+    color: rgb(9, 255, 0);
     font-weight: 500;
 }
 .home .home-content a{
@@ -234,53 +237,54 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: rgb(1, 39, 193);
+    color: rgb(0, 136, 255);
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: rgb(1, 39, 193);
-    color: #fff;
+    background: rgb(15, 141, 251);
+    color: #ffffff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid rgb(1, 39, 193);
+    /* border: 2px solid rgb(1, 39, 193); */
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: rgb(1, 39, 193);
-    background: none;
+    /* color: rgb(0, 0, 0); */
+    background: rgb(14, 138, 2);
 }
 
 /* services section styling */
 .services, .teams{
     color:#fff;
-    background: #111;
+    background: #1a1a1a;
 }
 .services .title::before,
 .teams .title::before{
-    background: #fff;
+    background: none;
 }
 .services .title::after,
 .teams .title::after{
-    background: #111;
+    background: none;
     /* content: "what i have achieved"; */
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    background: #000000;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
+    margin-top: 25px;
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: rgb(1, 39, 193);
+    background: rgb(193, 1, 1);
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -290,7 +294,7 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: rgb(1, 39, 193);
+    color: rgb(255, 31, 31);
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
@@ -320,19 +324,19 @@ section .title::after{
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: rgb(1, 39, 193);
+    background: rgb(68, 105, 255);
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid rgb(1, 39, 193);
+    /* border: 2px solid rgb(1, 39, 193); */
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    color: rgb(1, 39, 193);
-    background: none;
+    /* color: rgb(0, 0, 0); */
+    background: rgb(14, 138, 2);
 }
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
